@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "places.schema.json",
+  "title": "Palestine: A Living Map - era place names",
+  "description": "Shape of public/data/places.json. Mirrors src/data/placeTypes.ts. Extra checks (years, overlaps, Arabic notes, region box) live in scripts/validate-data.ts. Hebrew names are never stored here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "places"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "places": { "type": "array", "items": { "$ref": "#/definitions/place" } }
+  },
+  "definitions": {
+    "nonEmpty": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "httpUrl": { "type": "string", "format": "uri", "pattern": "^https?://" },
+    "year": { "type": "integer", "not": { "const": 0 } },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url", "publisher", "accessedDate"],
+      "properties": {
+        "title": { "$ref": "#/definitions/nonEmpty" },
+        "url": { "$ref": "#/definitions/httpUrl" },
+        "publisher": { "$ref": "#/definitions/nonEmpty" },
+        "accessedDate": { "type": "string", "format": "date" },
+        "author": { "$ref": "#/definitions/nonEmpty" },
+        "pages": { "$ref": "#/definitions/nonEmpty" },
+        "note": { "$ref": "#/definitions/nonEmpty" }
+      }
+    },
+    "name": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "ar", "lang", "from", "to", "fromCirca", "toCirca", "sources"],
+      "properties": {
+        "en": { "$ref": "#/definitions/nonEmpty" },
+        "ar": { "oneOf": [{ "$ref": "#/definitions/nonEmpty" }, { "type": "null" }] },
+        "lang": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)*$" },
+        "from": {
+          "description": "First year the name is attested in use. null = not yet sourced: the name is listed on the place card but never drawn on the map.",
+          "oneOf": [{ "$ref": "#/definitions/year" }, { "type": "null" }]
+        },
+        "to": {
+          "description": "Last year the name is attested in use. null = still in use today.",
+          "oneOf": [{ "$ref": "#/definitions/year" }, { "type": "null" }]
+        },
+        "fromCirca": { "type": "boolean" },
+        "toCirca": { "type": "boolean" },
+        "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/source" } },
+        "note": { "$ref": "#/definitions/nonEmpty" }
+      }
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "rank", "lat", "lng", "names", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "kind": { "enum": ["city", "town", "village", "site", "region", "water", "mountain"] },
+        "rank": { "type": "integer", "minimum": 1, "maximum": 4 },
+        "priority": { "type": "integer", "minimum": 1, "maximum": 9 },
+        "depopulated": { "type": "integer" },
+        "group": { "const": "settlement" },
+        "labelPath": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } }
+        },
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "lng": { "type": "number", "minimum": -180, "maximum": 180 },
+        "names": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/name" } },
+        "status": { "enum": ["verified", "needs-review"] },
+        "editorNote": { "$ref": "#/definitions/nonEmpty" }
+      }
+    }
+  }
+}

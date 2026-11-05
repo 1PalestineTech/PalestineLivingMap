@@ -1,0 +1,289 @@
+{
+  "$schema": "./paths.schema.json",
+  "version": 1,
+  "paths": [
+    {
+      "id": "napoleon-jaffa-acre-route-1799",
+      "eventId": "napoleon-jaffa-acre-1799",
+      "kind": "campaign",
+      "shape": "schematic",
+      "waypoints": [
+        {
+          "name": "Jaffa",
+          "lat": 32.0522,
+          "lng": 34.7531,
+          "date": "1799-03"
+        },
+        {
+          "name": "Acre",
+          "lat": 32.9281,
+          "lng": 35.0823,
+          "date": "1799-03-20"
+        }
+      ],
+      "lingerYears": 3,
+      "sources": [
+        {
+          "title": "Siege of Jaffa",
+          "url": "https://en.wikipedia.org/wiki/Siege_of_Jaffa",
+          "publisher": "Wikipedia",
+          "accessedDate": "2026-11-03"
+        },
+        {
+          "title": "Siege of Acre (1799)",
+          "url": "https://en.wikipedia.org/wiki/Siege_of_Acre_(1799)",
+          "publisher": "Wikipedia",
+          "accessedDate": "2026-11-03",
+          "note": "First 100k of 110k characters read."
+        }
+      ],
+      "status": "needs-review",
+      "editorNote": "Sample path for Phase 15a. The line is a schematic curve between the two places the sources name (Jaffa taken in early March, the siege of Acre from 20 March 1799), not the road the army took. The French withdrawal to Egypt in May leaves the map and is not drawn. Waypoint coordinates are the city points in the event records. A scholarly source should replace the two Wikipedia articles."
+    },
+    {
+      "id": "dahir-al-umar-rise-route",
+      "eventId": "daher-al-umar-acre",
+      "kind": "campaign",
+      "shape": "schematic",
+      "waypoints": [
+        {
+          "name": "Tiberias",
+          "lat": 32.7959,
+          "lng": 35.53,
+          "date": "1730"
+        },
+        {
+          "name": "Marj Ibn Amer",
+          "lat": 32.6,
+          "lng": 35.25,
+          "date": "1735"
+        },
+        {
+          "name": "Acre",
+          "lat": 32.9281,
+          "lng": 35.0823,
+          "date": "1749"
+        }
+      ],
+      "lingerYears": 10,
+      "sources": [
+        {
+          "title": "Palestine: A Four Thousand Year History",
+          "author": "Nur Masalha",
+          "url": "https://openlibrary.org/isbn/9781786992727",
+          "publisher": "Zed Books, London, 2018. ISBN 978-1-78699-272-7",
+          "pages": "224, 228-229",
+          "accessedDate": "2026-11-04",
+          "note": "Printed page numbers estimated from the position in the owner's PDF (accuracy about 1-2 pages); to be confirmed against the print edition."
+        },
+        {
+          "title": "Zahir al-Umar's Stronghold in the Galilee",
+          "url": "https://www.ebsco.com/research-starters/history/zahir-al-umars-stronghold-galilee",
+          "publisher": "EBSCO Research Starters",
+          "accessedDate": "2026-11-03"
+        }
+      ],
+      "status": "needs-review",
+      "editorNote": "Draws the places the event records name in order: Tiberias taken about 1730, the 1735 victory at Marj Ibn Amer, Acre taken in 1749 (Masalha). The line is a schematic curve, not a route travelled. Tiberias coordinates are a town-centre point from general knowledge; the other two are the event records' points."
+    },
+    {
+      "id": "jaffa-jerusalem-railway-route",
+      "eventId": "jaffa-jerusalem-railway-1892",
+      "kind": "railway",
+      "shape": "schematic",
+      "waypoints": [
+        {
+          "name": "Jaffa",
+          "lat": 32.0497,
+          "lng": 34.7566,
+          "date": "1892-09-26"
+        },
+        {
+          "name": "Lydda",
+          "lat": 31.9497,
+          "lng": 34.8886,
+          "date": "1892-09-26"
+        },
+        {
+          "name": "Ramle",
+          "lat": 31.9293,
+          "lng": 34.8722,
+          "date": "1892-09-26"
+        },
+        {
+          "name": "Battir",
+          "lat": 31.7186,
+          "lng": 35.1417,
+          "date": "1892-09-26"
+        },
+        {
+          "name": "Jerusalem",
+          "lat": 31.7683,
+          "lng": 35.2137,
+          "date": "1892-09-26"
+        }
+      ],
+      "lingerYears": 30,
+      "sources": [
+        {
+          "title": "Jaffa-Jerusalem railway",
+          "url": "https://en.wikipedia.org/wiki/Jaffa%E2%80%93Jerusalem_railway",
+          "publisher": "Wikipedia",
+          "accessedDate": "2026-11-03"
+        },
+        {
+          "title": "The history of the First Station",
+          "url": "https://www.firststation.co.il/en/the-history-of-the-first-station/",
+          "publisher": "First Station, Jerusalem",
+          "accessedDate": "2026-11-03"
+        }
+      ],
+      "status": "needs-review",
+      "editorNote": "The event record names only Jaffa and Jerusalem. The intermediate stations (Lydda, Ramle, Battir) and all coordinates here are from general knowledge of the line and must be checked against the Wikipedia article or a map; the drawn line is a schematic curve through them, not the track. A traced line needs a licensed map (docs/REGION_SOURCES.md)."
+    },
+    {
+      "id": "lydda-expulsion-route-1948",
+      "eventId": "lydda-ramle-expulsions-1948",
+      "kind": "displacement",
+      "shape": "schematic",
+      "waypoints": [
+        {
+          "name": "Lydda",
+          "lat": 31.952,
+          "lng": 34.895,
+          "date": "1948-07-13"
+        },
+        {
+          "name": "Bayt Nabala",
+          "lat": 31.9856,
+          "lng": 34.9567,
+          "date": null
+        },
+        {
+          "name": "Barfiliya",
+          "lat": 31.91,
+          "lng": 34.9894,
+          "date": null
+        },
+        {
+          "name": "Ramallah",
+          "lat": 31.9038,
+          "lng": 35.2034,
+          "date": "1948-07-15"
+        }
+      ],
+      "lingerYears": 8,
+      "sources": [
+        {
+          "title": "1948 Palestinian expulsion from Lydda and Ramle (Wikipedia)",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/1948_Palestinian_expulsion_from_Lydda_and_Ramle",
+          "publisher": "Wikimedia Foundation",
+          "accessedDate": "2026-11-04",
+          "note": "Secondary pointer. It cites Morris (2004), Khalidi, 'The Fall of Lydda', Journal of Palestine Studies (1998) and Abdel Jawad (2007); not read directly."
+        }
+      ],
+      "status": "needs-review",
+      "editorNote": "The page says Lydda's residents walked toward Beit Nabala, then Barfiliya, and after about three days the Arab Legion drove survivors to Ramallah. The line is a schematic curve through those places, not the road. Accounts differ on whether the departure was ordered and why; see the event card. Ramle's residents were bussed out; that route is not documented here."
+    },
+    {
+      "id": "jaffa-to-lydda-route-1948",
+      "eventId": "jaffa-operation-hametz-1948",
+      "kind": "displacement",
+      "shape": "schematic",
+      "waypoints": [
+        {
+          "name": "Jaffa",
+          "lat": 32.0522,
+          "lng": 34.7531,
+          "date": "1948-04-25"
+        },
+        {
+          "name": "Lydda",
+          "lat": 31.952,
+          "lng": 34.895,
+          "date": "1948-04-30"
+        }
+      ],
+      "lingerYears": 8,
+      "sources": [
+        {
+          "title": "Operation Hametz (Wikipedia)",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/Operation_Hametz",
+          "publisher": "Wikimedia Foundation",
+          "accessedDate": "2026-11-04",
+          "note": "Secondary pointer; see the event card."
+        }
+      ],
+      "status": "needs-review",
+      "editorNote": "By 30 April the British Army was escorting civilians from Jaffa to Lydda and Ramle (the page's wording). Schematic curve, not the road. Many others left by sea; that route leaves the map along the coast and is not drawn."
+    },
+    {
+      "id": "jaffa-to-ramle-route-1948",
+      "eventId": "jaffa-operation-hametz-1948",
+      "kind": "displacement",
+      "shape": "schematic",
+      "waypoints": [
+        {
+          "name": "Jaffa",
+          "lat": 32.0522,
+          "lng": 34.7531,
+          "date": "1948-04-25"
+        },
+        {
+          "name": "Ramle",
+          "lat": 31.9293,
+          "lng": 34.8722,
+          "date": "1948-04-30"
+        }
+      ],
+      "lingerYears": 8,
+      "sources": [
+        {
+          "title": "Operation Hametz (Wikipedia)",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/Operation_Hametz",
+          "publisher": "Wikimedia Foundation",
+          "accessedDate": "2026-11-04",
+          "note": "Secondary pointer; see the event card."
+        }
+      ],
+      "status": "needs-review",
+      "editorNote": "See the Jaffa to Lydda path; the same page names Ramle as the second destination. Schematic curve, not the road."
+    },
+    {
+      "id": "safad-christians-to-haifa-route-1948",
+      "eventId": "safad-captured-1948",
+      "kind": "displacement",
+      "shape": "schematic",
+      "waypoints": [
+        {
+          "name": "Safad",
+          "lat": 32.9646,
+          "lng": 35.496,
+          "date": "1948-06-13"
+        },
+        {
+          "name": "Haifa",
+          "lat": 32.794,
+          "lng": 34.9896,
+          "date": "1948-06-13"
+        }
+      ],
+      "lingerYears": 8,
+      "sources": [
+        {
+          "title": "Operation Yiftach (Wikipedia)",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/Operation_Yiftach",
+          "publisher": "Wikimedia Foundation",
+          "accessedDate": "2026-11-04",
+          "note": "Secondary pointer; see the event card."
+        }
+      ],
+      "status": "needs-review",
+      "editorNote": "The page says Christians were taken from Safad to Haifa on 13 June 1948. Schematic curve, not the road. The Muslims' expulsion toward Lebanon leaves the map and is not drawn."
+    }
+  ]
+}

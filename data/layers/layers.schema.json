@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "layers.schema.json",
+  "title": "Palestine: A Living Map - map layers manifest",
+  "description": "Shape of public/data/layers/layers.json. Mirrors src/data/layerTypes.ts. Extra checks (files exist and are GeoJSON, validFrom not after validTo, sources for real layers) live in scripts/validate-data.ts.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "layers"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "layers": { "type": "array", "items": { "$ref": "#/definitions/layer" } }
+  },
+  "definitions": {
+    "nonEmpty": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "year": { "type": "integer", "description": "Historical year: negative is BCE, there is no year 0." },
+    "layer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "description", "validFrom", "validTo", "source", "license", "file"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "name": { "$ref": "#/definitions/nonEmpty" },
+        "description": { "$ref": "#/definitions/nonEmpty" },
+        "validFrom": { "$ref": "#/definitions/year" },
+        "validTo": { "anyOf": [{ "$ref": "#/definitions/year" }, { "type": "null" }], "description": "null means to the present." },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["title", "url"],
+          "properties": {
+            "title": { "$ref": "#/definitions/nonEmpty" },
+            "url": { "anyOf": [{ "type": "string", "format": "uri", "pattern": "^https?://" }, { "type": "null" }] }
+          }
+        },
+        "license": { "$ref": "#/definitions/nonEmpty" },
+        "file": { "type": "string", "pattern": "^[A-Za-z0-9._-]+\\.geojson$", "description": "File name inside public/data/layers/." },
+        "placeholder": { "type": "boolean", "description": "True for invented test layers that must be replaced before launch." }
+      }
+    }
+  }
+}

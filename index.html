@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Palestine: A Living Map</title>
+    <meta
+      name="description"
+      content="An interactive map timeline of Palestinian history, from the Early Bronze Age to the present. Scrub through time, see where events happened, and read the sources behind each story."
+    />
+    <meta name="theme-color" content="#F4ECDC" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1C1A17" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Palestine: A Living Map" />
+    <meta property="og:title" content="Palestine: A Living Map" />
+    <meta
+      property="og:description"
+      content="An interactive map timeline of Palestinian history. Scrub through time, see where events happened, and read the sources behind each story."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Palestine: A Living Map" />
+    <meta
+      name="twitter:description"
+      content="An interactive map timeline of Palestinian history, with sources for every event."
+    />
+    <!-- TODO (Phase 11): add og:url and og:image once the site URL and a preview image exist. -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Loaded without blocking the first paint: the page shows in fallback fonts, then swaps (display=swap). -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=optional"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=optional"
+      />
+    </noscript>
+    <script type="module" crossorigin src="./assets/index-CshpLvhT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DVQg-C9H.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#event-list">Skip to event list</a>
+
+    <div class="app" id="app">
+      <header class="topbar">
+        <h1 class="topbar__title">Palestine<span class="topbar__sub">: A Living Map</span></h1>
+        <div class="search" id="search"></div>
+        <div class="topbar__actions">
+          <button type="button" class="btn" id="follow-button" hidden>Follow</button>
+          <button type="button" class="btn" id="story-button" aria-pressed="false" hidden>Story</button>
+          <button type="button" class="btn" id="filters-button" aria-haspopup="dialog">
+            Filters
+          </button>
+          <button type="button" class="btn btn--compact" id="theme-button" aria-pressed="false">Night mode</button>
+          <button type="button" class="btn btn--compact" id="about-button" aria-haspopup="dialog" aria-label="About this map" data-glyph="i">About</button>
+        </div>
+      </header>
+
+      <main class="map-area" id="map" aria-label="Map of Palestine">
+        <div class="map-canvas" id="map-canvas"></div>
+        <!-- Grain and vignette: in the page from the first paint (src/map/paper.ts adds the compass). -->
+        <div class="paper" aria-hidden="true"></div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+      </main>
+
+      <aside class="panel" id="panel" aria-label="Event details" hidden>
+        <button type="button" class="panel__grab" id="panel-grab" aria-label="Expand or collapse event details" aria-expanded="false">
+          <span class="panel__grab-bar" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn--icon panel__close" id="panel-close" aria-label="Close event panel">
+          &times;
+        </button>
+        <div class="panel__body" id="panel-body"></div>
+      </aside>
+
+      <div id="story-mount"></div>
+
+      <section class="timeline" id="timeline" aria-label="Timeline"></section>
+    </div>
+
+    <section class="sr-only event-list" id="event-list" tabindex="-1" aria-label="Events in the current year">
+      <p>The text list of events appears here once events are loaded.</p>
+    </section>
+
+  </body>
+</html>
