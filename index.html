@@ -19,34 +19,21 @@
       property="og:description"
       content="An interactive map timeline of Palestinian history. Scrub through time, see where events happened, and read the sources behind each story."
     />
-    <meta property="og:image" content="%SITE_URL%preview.png" />
+    <meta property="og:image" content="./preview.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="%SITE_URL%preview.png" />
+    <meta name="twitter:image" content="./preview.png" />
     <meta name="twitter:title" content="Palestine: A Living Map" />
     <meta
       name="twitter:description"
       content="An interactive map timeline of Palestinian history, with sources for every event."
     />
-    <!-- %SITE_URL% is replaced at build time with VITE_SITE_URL (the public address ending in a slash, for example https://example.org/map/); chat apps need the full address to show the preview. -->
+    <!-- ./ is replaced at build time with VITE_SITE_URL (the public address ending in a slash, for example https://example.org/map/); chat apps need the full address to show the preview. -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Loaded without blocking the first paint: the page shows in fallback fonts, then swaps (display=swap). -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=optional"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=optional"
-      />
-    </noscript>
-  </head>
+      <script type="module" crossorigin src="./assets/index-CN6UfeRI.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-DWG23fs9.css">
+    </head>
   <body>
     <a class="skip-link" href="#event-list">Skip to event list</a>
 
@@ -93,6 +80,5 @@
       <p>The text list of events appears here once events are loaded.</p>
     </section>
 
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

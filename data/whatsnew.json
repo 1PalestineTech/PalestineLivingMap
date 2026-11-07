@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "entries": [
+    { "id": "2026-11-08-share", "date": "2026-11-08", "title": "Share, compare and report", "text": "Share any card as a picture, copy an embed code for your own website, compare two years side by side, report a mistake or add a missing village from the About panel." },
+    { "id": "2026-11-08-villages", "date": "2026-11-08", "title": "Village cards", "text": "Village cards now show the sub-district, the occupation date, the population and the Israeli locality built on the land where the sources say so. Machine-read figures are marked." },
+    { "id": "2026-11-08-arabic", "date": "2026-11-08", "title": "Arabic interface", "text": "A button in the top bar switches the page to Arabic with a right-to-left layout. Event texts are still in English." },
+    { "id": "2026-11-08-search", "date": "2026-11-08", "title": "Search for sets of places", "text": "Try \"villages of Safad depopulated 1948\": the map labels only those places." },
+    { "id": "2026-11-07-zones", "date": "2026-11-07", "title": "Occupation of Palestine since 1948 and the lakes in 1946", "text": "Two new options in Filters show who held the land year by year, and Lake Hula and the Dead Sea as the 1946 survey sheet printed them." },
+    { "id": "2026-11-07-stories", "date": "2026-11-07", "title": "New stories", "text": "\"Intro to Palestine\", \"Settlement and land\" and \"The changing land\" follow the main events in order." },
+    { "id": "2026-11-05-villages", "date": "2026-11-05", "title": "Hundreds more villages", "text": "About 830 places were added from Palestine Remembered and about 330 villages now cite Khalidi's All That Remains. All are marked under review." },
+    { "id": "2026-11-04-look", "date": "2026-11-04", "title": "Painted look, night mode and offline copy", "text": "The map got a painted look, a night mode, village labels, and an offline copy that can be sent to people." }
+  ]
+}

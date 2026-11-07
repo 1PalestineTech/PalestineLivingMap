@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "stories.schema.json",
+  "title": "Palestine: A Living Map - stories file",
+  "description": "Shape of public/data/stories.json. Mirrors src/data/storyTypes.ts. Extra checks (event ids exist, caption length, unique ids) live in scripts/validate-data.ts.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "stories"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "stories": { "type": "array", "items": { "$ref": "#/definitions/story" } }
+  },
+  "definitions": {
+    "nonEmpty": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "kebabId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "intro", "steps"],
+      "properties": {
+        "id": { "$ref": "#/definitions/kebabId" },
+        "title": { "$ref": "#/definitions/nonEmpty" },
+        "intro": { "$ref": "#/definitions/nonEmpty" },
+        "placeholder": { "type": "boolean", "description": "True for sample stories that must be replaced before launch." },
+        "showLakes": { "type": "boolean", "description": "Show the 1946 lake outlines while this story runs." },
+        "showControl": { "type": "boolean", "description": "Show the control-of-the-land zones while this story runs." },
+        "showSettlements": { "type": "boolean", "description": "Show the Israeli settlements on the map while this story runs." },
+        "steps": { "type": "array", "minItems": 1, "items": { "$ref": "#/definitions/step" } }
+      }
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["eventId", "caption"],
+      "properties": {
+        "eventId": { "$ref": "#/definitions/kebabId" },
+        "caption": { "$ref": "#/definitions/nonEmpty", "description": "Max 40 words; checked by the validator." },
+        "cameraZoom": { "type": "number", "minimum": 3, "maximum": 16, "description": "Map zoom for this step; omit to use the default for the event's location precision." }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "./threads.schema.json",
+  "version": 1,
+  "threads": [
+    {
+      "id": "dahir-al-umar",
+      "kind": "person",
+      "title": "Dahir al-Umar",
+      "titleAr": "ظاهر العمر",
+      "intro": "A Galilean tax farmer who built a largely autonomous rule centred on Acre. After rebelling against Ottoman authority he won at Marj Ibn Amer in 1735, took Acre in 1749, founded 'New Haifa' in 1764-1765, and was formally recognised by the Ottomans in 1768, according to the cards.",
+      "eventIds": [
+        "daher-al-umar-acre",
+        "dahir-al-umar-victory-marj-ibn-amer-1735",
+        "dahir-al-umar-takes-acre-1749",
+        "new-haifa-founded-dahir-al-umar-1764",
+        "ottoman-recognition-of-dahir-al-umar-1768"
+      ],
+      "pathIds": [
+        "dahir-al-umar-rise-route"
+      ],
+      "placeIds": [
+        "acre"
+      ],
+      "status": "needs-review"
+    },
+    {
+      "id": "acre",
+      "kind": "place",
+      "title": "Acre",
+      "titleAr": "عكا",
+      "intro": "Acre became capital of the re-established Latin Kingdom in 1192 and fell to the Mamluks in 1291. Dahir al-Umar took it in 1749 and made it his capital, al-Jazzar built the White Mosque there in 1781, and Napoleon's army failed to take it in 1799, according to the cards.",
+      "eventIds": [
+        "latin-kingdom-reestablished-acre-1192",
+        "fall-of-acre-1291",
+        "dahir-al-umar-takes-acre-1749",
+        "al-jazzar-mosque-acre-1781",
+        "napoleon-jaffa-acre-1799"
+      ],
+      "pathIds": [
+        "napoleon-jaffa-acre-route-1799"
+      ],
+      "placeIds": [
+        "acre"
+      ],
+      "status": "needs-review"
+    },
+    {
+      "id": "jerusalem",
+      "kind": "place",
+      "title": "Jerusalem",
+      "titleAr": "القدس",
+      "intro": "The cards follow Jerusalem from Hadrian's Aelia Capitolina through the Arab conquest of 638 and the Dome of the Rock of 691. The Crusaders took it in 1099, the Ayyubids restored it as capital in 1187, Suleiman rebuilt its walls about 1537, and the cards end with the 1872 mutasarrifate and Israeli law in East Jerusalem in 1967.",
+      "eventIds": [
+        "jerusalem-renamed-aelia-capitolina-2nd-century",
+        "arab-conquest-of-jerusalem-638",
+        "dome-of-the-rock-completed-691",
+        "jerusalem-captured-first-crusade-1099",
+        "jerusalem-capital-restored-ayyubids",
+        "jerusalem-walls-rebuilt-suleiman",
+        "jerusalem-mutasarrifate-1872",
+        "israel-extends-law-east-jerusalem-1967"
+      ],
+      "pathIds": [],
+      "placeIds": [
+        "jerusalem"
+      ],
+      "status": "needs-review"
+    },
+    {
+      "id": "gaza",
+      "kind": "place",
+      "title": "Gaza",
+      "titleAr": "غزة",
+      "intro": "Masalha places Gaza's first coinage in 538 BCE, and Alexander besieged it in 332 BCE. Hadrian passed through in 130, the Gaza scholar al-Tumurtashi wrote about the boundaries of Filastin in 1695, and the first intifada began in Gaza in 1987, according to the cards.",
+      "eventIds": [
+        "philisto-arabian-coinage-gaza-538-bce",
+        "siege-of-gaza-332-bce",
+        "hadrian-visits-gaza-130",
+        "al-tumurtashi-khabar-al-tamm-gaza-1695",
+        "first-intifada-1987"
+      ],
+      "pathIds": [],
+      "placeIds": [
+        "gaza"
+      ],
+      "status": "needs-review"
+    },
+    {
+      "id": "jaffa",
+      "kind": "place",
+      "title": "Jaffa",
+      "titleAr": "يافا",
+      "intro": "Napoleon's army took Jaffa in 1799. The cards then cover the first Jewish immigrants arriving there in 1882, the Jaffa-Jerusalem railway of 1892, the newspaper Falastin founded in 1911, and the violence of May 1921.",
+      "eventIds": [
+        "napoleon-jaffa-acre-1799",
+        "first-aliyah-1882",
+        "jaffa-jerusalem-railway-1892",
+        "falastin-newspaper-founded-1911",
+        "jaffa-riots-1921"
+      ],
+      "pathIds": [
+        "napoleon-jaffa-acre-route-1799",
+        "jaffa-jerusalem-railway-route"
+      ],
+      "placeIds": [
+        "jaffa"
+      ],
+      "status": "needs-review"
+    },
+    {
+      "id": "the-name-palestine",
+      "kind": "theme",
+      "title": "The name Palestine in texts and maps",
+      "intro": "According to Masalha, Syria Palaestina is first used officially in 139, Ptolemy maps Palaestina about 150, and the Madaba mosaic labels Palestine about 560. Coins of 696 and al-Idrisi's 1154 map carry Filastin, and Mujir al-Din uses it in about 1495.",
+      "eventIds": [
+        "syria-palaestina-province-created-135",
+        "military-diploma-syria-palaestina-139",
+        "ptolemy-geography-map-palaestina-150",
+        "madaba-mosaic-map-560-565",
+        "abd-al-malik-currency-reform-696",
+        "al-idrisi-world-map-1154",
+        "maps-naming-palestine-14th-15th-c",
+        "mujir-al-din-history-1495"
+      ],
+      "pathIds": [],
+      "placeIds": [
+        "palestine-region"
+      ],
+      "status": "needs-review"
+    }
+  ]
+}
