@@ -8757,6 +8757,133 @@
       ],
       "status": "needs-review",
       "editorNote": "Only a Wikipedia summary read. Needs Morris (2008), Khalidi (1992) and Herzog and Gazit directly. The Lebanese leg leaves the map and is not drawn."
+    },
+    {
+      "id": "hula-lake-drained-1951-1958",
+      "title": "Lake Hula and its marshes are drained",
+      "dateStart": "1951",
+      "dateEnd": "1958",
+      "datePrecision": "year",
+      "circa": false,
+      "location": {
+        "name": "Hula Valley",
+        "nameAr": "سهل الحولة",
+        "lat": 33.103,
+        "lng": 35.609,
+        "precision": "area",
+        "nameHe": "עמק החולה"
+      },
+      "category": "land-settlement",
+      "era": "1948-1967",
+      "summary": "From 1951 to 1958 the Jewish National Fund drained Lake Hula, which had covered 12-14 square kilometres, and the marshes around it. The stated aims were to reduce malaria-carrying mosquitoes and to create farmland. The peat later burned and blew away, endemic fish were lost, and in the early 1990s part of the valley was flooded again.",
+      "details": "An Ottoman concession to drain the marsh dates from 1908 and the Palestine Land Development Company bought it in 1933. The lake was about 5.3 km long and 4.4 km wide, 1.5 to 3 m deep. A small papyrus reserve was set aside in 1963 and the Hula Nature Reserve opened in 1964.",
+      "sources": [
+        {
+          "title": "Hula Valley (the Lake Hula article redirects here)",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/Hula_Valley",
+          "publisher": "Wikipedia (secondary; last-resort source)",
+          "pages": "n/a (web page)",
+          "accessedDate": "2026-11-07",
+          "note": "Read: drainage 1951-1958 by the JNF; reasons (malaria, farmland); lake size 5.3 x 4.4 km, 12-14 km2, depth 1.5-3 m; 1908 concession and 1933 purchase; peat fires, wind erosion, loss of endemic fish; 1963 papyrus reserve, 1964 reserve; early-1990s partial reflooding; infobox coordinates 33.103, 35.609 (the valley, not the lake). Wikipedia is a secondary source: check against the primary and scholarly sources it cites."
+        }
+      ],
+      "status": "needs-review",
+      "tags": [
+        "geography",
+        "lakes"
+      ],
+      "editorNote": "Geography strand of the timeline. The map shows no former lake outline because no sourced outline has been added."
+    },
+    {
+      "id": "national-water-carrier-1964",
+      "title": "Israel completes the National Water Carrier",
+      "dateStart": "1964-06",
+      "dateEnd": null,
+      "datePrecision": "month",
+      "circa": false,
+      "location": {
+        "name": "Sea of Galilee",
+        "nameAr": "بحيرة طبريا",
+        "lat": 32.82,
+        "lng": 35.59,
+        "precision": "area",
+        "nameHe": "ים כנרת"
+      },
+      "category": "economy-daily-life",
+      "era": "1948-1967",
+      "summary": "Construction began in 1953 and the carrier, about 130 km long, was completed in June 1964, taking water from the Sea of Galilee to the centre and the Negev. Wikipedia reports that the reduced Jordan flow is partly blamed for the Dead Sea's shrinking, and that Syria's diversion plan was among the factors leading to the 1967 war.",
+      "sources": [
+        {
+          "title": "National Water Carrier of Israel",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/National_Water_Carrier_of_Israel",
+          "publisher": "Wikipedia (secondary; last-resort source)",
+          "pages": "n/a (web page)",
+          "accessedDate": "2026-11-07",
+          "note": "Read: construction began 1953, completed June 1964 under Levi Eshkol, about 130 km; intake from the northern Sea of Galilee; Dead Sea shrinkage partly attributed to reduced Jordan flow; tension with Syria and Jordan, Syria's 1964 Headwater Diversion Plan and Israel's 1965 strikes. The page gives no coordinates for the intake, so the point here is the lake in general."
+        }
+      ],
+      "status": "needs-review",
+      "tags": [
+        "geography",
+        "water"
+      ]
+    },
+    {
+      "id": "dead-sea-shrinking-1960s-present",
+      "title": "The Dead Sea shrinks",
+      "dateStart": "1960",
+      "dateEnd": null,
+      "datePrecision": "decade",
+      "circa": true,
+      "ongoing": true,
+      "location": {
+        "name": "Dead Sea",
+        "nameAr": "البحر الميت",
+        "lat": 31.5,
+        "lng": 35.47,
+        "precision": "area",
+        "nameHe": "ים המלח"
+      },
+      "category": "economy-daily-life",
+      "era": "1948-1967",
+      "summary": "The Dead Sea covered about 1,050 square kilometres in 1930 and about 605 in 2016; in 2025 its surface stood 439.78 metres below sea level. Wikipedia reports it has shrunk by about a third since the 1960s, partly because less Jordan water arrives, and that sinkholes have opened along its shores.",
+      "sources": [
+        {
+          "title": "Dead Sea",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/Dead_Sea",
+          "publisher": "Wikipedia (secondary; last-resort source)",
+          "pages": "n/a (web page)",
+          "accessedDate": "2026-11-07",
+          "note": "Read only the first part of the page verbatim (lead and infobox): area 1,050 km2 in 1930 against 605 km2 today (infobox 2016), surface 439.78 m below sea level in 2025. Longer tables of earlier levels on that page were NOT read verbatim and are not used here."
+        },
+        {
+          "title": "National Water Carrier of Israel",
+          "author": "Wikipedia contributors",
+          "url": "https://en.wikipedia.org/wiki/National_Water_Carrier_of_Israel",
+          "publisher": "Wikipedia (secondary; last-resort source)",
+          "pages": "n/a (web page)",
+          "accessedDate": "2026-11-07",
+          "note": "Read: Dead Sea surface shrunk by about 33% since the 1960s, partly attributed to reduced Jordan flow; EcoPeace estimate for 2021 of under 100 million m3 a year into the Dead Sea against 1,200-1,300 million before; level falling by more than 1 m a year as of 2021; sinkholes at Ein Gedi."
+        },
+        {
+          "title": "Palestine, North Sheet and South Sheet, 1:250,000 (Survey of Palestine, compiled 1944, reprinted c. 1946)",
+          "url": "https://www.nli.org.il/en/maps/NNL_ALEPH990026470220205171/NLI",
+          "publisher": "Survey of Palestine; catalogue record at the National Library of Israel",
+          "pages": "South sheet, Dead Sea",
+          "accessedDate": "2026-11-07",
+          "note": "Read from the owner's scan: the Dead Sea carries the printed note \"-392 (M.W.L. 1938)\". The sheet's exact edition and copyright status are still to be confirmed."
+        }
+      ],
+      "status": "needs-review",
+      "tags": [
+        "geography",
+        "lakes"
+      ],
+      "editorNote": "The start year is approximate (\"since the 1960s\" in the source). Level figures for years between 1930 and 2025 need a primary source (Israel Hydrological Service, Geological Survey of Israel) before they are added.",
+      "details": "The 1946 Survey of Palestine sheet prints the Dead Sea's mean water level as 392 m below sea level (1938). The 1946 shore traced from that sheet encloses about 905 square kilometres (the project's own measurement, accurate to a few percent). The sheet also draws Lake Hula, about 12 square kilometres, before it was drained."
     }
   ]
 }

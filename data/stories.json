@@ -185,6 +185,98 @@
           "caption": "On 19 July 2024 the International Court of Justice advised that Israel's continued presence in the occupied Palestinian territory is unlawful and should end as rapidly as possible. Israel rejects the opinion."
         }
       ]
+    },
+    {
+      "id": "land-and-water-change",
+      "title": "The changing land: lakes and water",
+      "intro": "Three stops on how the lakes of the Jordan valley have changed in the last century, with Lake Hula and the Dead Sea of 1946 drawn from the Survey of Palestine sheet so you can compare them with today. The long story of the rift valley, Lake Lisan and the formation of the hills is not on this timeline yet. Each caption restates its event card; open a card for sources.",
+      "steps": [
+        {
+          "eventId": "hula-lake-drained-1951-1958",
+          "caption": "From 1951 to 1958 the Jewish National Fund drained Lake Hula (12-14 square kilometres) and its marshes to fight malaria and make farmland. Peat fires, soil loss and the end of endemic fish followed; part flooded again in the 1990s.",
+          "cameraZoom": 10
+        },
+        {
+          "eventId": "national-water-carrier-1964",
+          "caption": "The National Water Carrier, built from 1953 and completed in June 1964, takes water from the Sea of Galilee to the centre and the Negev. It also reduced the flow of the Jordan, and Syria and Jordan objected.",
+          "cameraZoom": 10
+        },
+        {
+          "eventId": "dead-sea-shrinking-1960s-present",
+          "caption": "The Dead Sea covered about 1,050 square kilometres in 1930 and about 605 in 2016; in 2025 it stood 439.78 metres below sea level. It has shrunk by about a third since the 1960s, partly because less Jordan water arrives.",
+          "cameraZoom": 9
+        }
+      ],
+      "showLakes": true
+    },
+    {
+      "id": "settlement-and-land",
+      "title": "Settlement and land: how the picture changed",
+      "intro": "Fifteen stops on Zionist and Israeli settlement and land, from the first Ottoman-era purchases to the courts today. Israeli settlements and the zones of control are switched on while this story runs: scrub the timeline afterwards to watch them appear by founding year. The sample of 379 localities comes from Wikidata and is incomplete. Each caption restates its event card.",
+      "showSettlements": true,
+      "steps": [
+        {
+          "eventId": "first-aliyah-1882",
+          "caption": "In 1882 the first organised wave of Jewish immigrants began arriving, and Petah Tikva had been founded in 1878. The Ottoman government restricted immigration and land purchase; the card gives the figures and the debates."
+        },
+        {
+          "eventId": "al-fula-land-sale-dispute-1910",
+          "caption": "In 1910 an absentee landlord in Beirut agreed to sell the lands of al-Fula to the Jewish National Fund. Local peasants petitioned the Ottoman authorities, and the press, including Falastin, took up their cause."
+        },
+        {
+          "eventId": "balfour-declaration-1917",
+          "caption": "On 2 November 1917 Britain declared its support for a national home for the Jewish people in Palestine, adding that the rights of existing non-Jewish communities should not be harmed."
+        },
+        {
+          "eventId": "jewish-immigration-1930s",
+          "caption": "After 1933 Jewish immigration rose, peaking at 61,854 legal arrivals in 1935. Censuses counted 83,794 Jews in 1922 and 174,610 in 1931. Arab opposition to immigration was a main driver of the 1936 strike."
+        },
+        {
+          "eventId": "un-partition-plan-1947",
+          "caption": "On 29 November 1947 the UN General Assembly voted for partition into Arab and Jewish states with an international Jerusalem. The Jewish Agency accepted; the Arab Higher Committee rejected it."
+        },
+        {
+          "eventId": "nakba-1947-1948",
+          "caption": "In the war that followed, more than 700,000 Palestinian Arabs, about half the Arab population, were expelled or fled. Hundreds of villages were depopulated; many sites later held Israeli settlements."
+        },
+        {
+          "eventId": "absentees-property-law-1950",
+          "caption": "The Absentees' Property Law of March 1950 vested the property of defined \"absentees\" in a Custodian. Estimates of the land and buildings affected vary by source."
+        },
+        {
+          "eventId": "law-of-return-1950",
+          "caption": "The Law of Return, passed in July 1950, gave Jews the right to immigrate to Israel and obtain citizenship. Supporters and critics, including on refugees' return, assess it differently."
+        },
+        {
+          "eventId": "june-1967-war-1967",
+          "caption": "Fighting in June 1967 left Israel in control of the West Bank including East Jerusalem, the Gaza Strip, Sinai and the Golan Heights. The debate over responsibility continues."
+        },
+        {
+          "eventId": "imwas-yalu-beit-nuba-demolished-1967",
+          "caption": "In June 1967 the residents of three villages near Latrun were ordered out and the villages later demolished; Canada Park was made on the land. Accounts differ on how and why."
+        },
+        {
+          "eventId": "allon-plan-and-first-settlements-1967",
+          "caption": "After 1967 Yigal Allon proposed that Israel keep the Jordan Valley, East Jerusalem and the Etzion Bloc. The cabinet never adopted the plan formally, but early settlement largely followed it."
+        },
+        {
+          "eventId": "oslo-ii-interim-agreement-1995",
+          "caption": "The 1995 Interim Agreement created Areas A, B and C in the West Bank. Area C stayed under Israeli control; OCHA put it at about 62 percent of the West Bank in 2010."
+        },
+        {
+          "eventId": "west-bank-barrier-and-icj-opinion-2002-2004",
+          "caption": "Israel began a barrier in 2002 to prevent attacks. About 85 percent of its route runs inside the West Bank, and in 2004 the International Court of Justice found the sections there contrary to international law."
+        },
+        {
+          "eventId": "gaza-disengagement-2005",
+          "caption": "In 2005 Israel removed about 8,475 settlers from Gaza and withdrew its ground forces. Israel says this ended its occupation of Gaza; the UN and others say its control of airspace, waters and crossings kept it in place."
+        },
+        {
+          "eventId": "icj-advisory-opinion-occupation-2024",
+          "caption": "In July 2024 the International Court of Justice advised that Israel's continued presence in the occupied Palestinian territory is unlawful and should end as rapidly as possible; Israel rejects the opinion."
+        }
+      ],
+      "showControl": true
     }
   ]
 }
