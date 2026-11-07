@@ -1,0 +1,69 @@
+/* Era labels: the map tooltip for a place, and the names list on the place card. */
+
+.map-tooltip--place .maplibregl-popup-content {
+  gap: var(--space-2);
+}
+
+.map-tooltip__name {
+  display: grid;
+  gap: 1px;
+}
+
+.map-tooltip__name strong {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+}
+
+.map-tooltip .map-tooltip__ar {
+  font-family: var(--font-ar);
+  font-size: var(--text-sm);
+}
+
+.place-names {
+  display: grid;
+  gap: var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+
+.place-name {
+  display: grid;
+  gap: var(--space-1);
+  padding-inline-start: var(--space-3);
+  border-inline-start: 2px solid var(--rule);
+}
+
+.place-name__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-3);
+  margin: 0;
+}
+
+.place-name__head .card__name:first-child {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.place-name__head [lang='ar'] {
+  font-family: var(--font-ar);
+}
+
+.place-name__sources {
+  margin: 0;
+}
+
+.place-events {
+  display: grid;
+  gap: var(--space-1);
+  padding: 0;
+  list-style: none;
+}
+
+.card__route {
+  color: var(--ink-2);
+  font-size: var(--text-sm);
+  font-style: italic;
+}

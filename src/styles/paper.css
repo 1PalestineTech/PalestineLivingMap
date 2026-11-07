@@ -1,0 +1,145 @@
+/* Paper grain, vignette and compass rose over the map (src/map/paper.ts). Static, inert, no animation.
+   The grain is an inline SVG feTurbulence noise tile (no image file), added once the map is up so it
+   stays off the first paint. Strength follows data-look. */
+
+:root {
+  --grain-opacity: 0.14;
+  --vignette: 0.08;
+  --compass-opacity: 0;
+}
+
+:root[data-look='strong'] {
+  --grain-opacity: 0.3;
+  --vignette: 0.32;
+  --compass-opacity: 0.8;
+}
+
+/* Plain translucent layers, no mix-blend-mode (a blend mode over the WebGL canvas slowed the first
+   paint in a Lighthouse mobile run). Warm brown at low opacity darkens the map much as multiply would. */
+.paper {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.paper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.paper::after {
+  background: radial-gradient(ellipse at center, transparent 50%, rgb(42 33 26 / var(--vignette)) 100%);
+}
+
+.paper__grain {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: var(--grain-opacity);
+}
+
+.paper__compass {
+  position: absolute;
+  top: calc(var(--space-4) + 4px);
+  left: var(--space-4);
+  width: 72px;
+  height: 72px;
+  color: var(--ink);
+  z-index: 1;
+  opacity: var(--compass-opacity);
+}
+
+.paper__stroke {
+  stroke: currentColor;
+  stroke-width: 1.4;
+}
+
+.paper__stroke--thin {
+  stroke-width: 0.7;
+}
+
+.paper__fill {
+  fill: currentColor;
+  fill-opacity: 0.15;
+  stroke: currentColor;
+  stroke-width: 1;
+}
+
+.paper__fill--short {
+  fill-opacity: 0.05;
+  stroke-width: 0.8;
+}
+
+.paper__half {
+  fill: currentColor;
+}
+
+.paper__letter {
+  fill: currentColor;
+  font: 600 13px var(--font-display);
+}
+
+@media (max-width: 600px) {
+  .paper__compass {
+    width: 48px;
+    height: 48px;
+    top: var(--space-3);
+    left: var(--space-3);
+  }
+}
+
+/* The night chart keeps the vignette but a little lighter, and the grain off where it would dim contrast. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --grain-opacity: 0.08;
+  }
+  :root:not([data-theme='light'])[data-look='strong'] {
+    --vignette: 0.45;
+    --grain-opacity: 0.14;
+  }
+}
+
+:root[data-theme='dark'] {
+  --grain-opacity: 0.08;
+}
+
+:root[data-theme='dark'][data-look='strong'] {
+  --vignette: 0.45;
+  --grain-opacity: 0.14;
+}
+
+@media (forced-colors: active) {
+  .paper {
+    display: none;
+  }
+}
+
+/* Inked look: heavier grain, a brown vignette like a stained sheet, and fold creases (static overlay). */
+:root[data-look='inked'] {
+  --grain-opacity: 0.26;
+  --vignette: 0.42;
+  --compass-opacity: 0.9;
+}
+
+:root[data-look='inked'] .paper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, transparent calc(33% - 2px), rgb(70 45 20 / 0.16) calc(33% - 1px), rgb(255 246 214 / 0.22) 33%, transparent calc(33% + 3px)),
+    linear-gradient(90deg, transparent calc(67% - 2px), rgb(70 45 20 / 0.14) calc(67% - 1px), rgb(255 246 214 / 0.2) 67%, transparent calc(67% + 3px)),
+    linear-gradient(0deg, transparent calc(46% - 2px), rgb(70 45 20 / 0.14) calc(46% - 1px), rgb(255 246 214 / 0.2) 46%, transparent calc(46% + 3px)),
+    radial-gradient(ellipse at 18% 82%, rgb(120 80 30 / 0.12), transparent 40%),
+    radial-gradient(ellipse at 85% 15%, rgb(120 80 30 / 0.1), transparent 38%);
+}
+
+@media (forced-colors: active) {
+  :root[data-look='inked'] .paper::before {
+    display: none;
+  }
+}

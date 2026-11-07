@@ -1,0 +1,206 @@
+/* Page shell (docs/SPEC.md section 3). Mobile first; desktop at >= 1024px. */
+
+.app {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr); /* lets the era row scroll instead of widening the page */
+  grid-template-rows: var(--topbar-h) minmax(0, 1fr) auto;
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Top bar */
+.topbar {
+  grid-row: 1;
+  z-index: var(--z-topbar);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: 0 var(--space-4);
+  background: var(--paper-glass);
+  border-bottom: 1px solid var(--rule);
+}
+
+.topbar__title {
+  font-size: var(--text-lg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Map area: sits behind the top bar and timeline so the map can run full bleed later. */
+.map-area {
+  position: relative;
+  grid-row: 2;
+  z-index: var(--z-map);
+  min-height: 0;
+  background: var(--sea);
+}
+
+/* Doubled up so it beats MapLibre's own `.maplibregl-map { position: relative }`. */
+.map-area > .map-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+/* Status and error messages over the map */
+.status {
+  position: absolute;
+  top: var(--space-4);
+  left: 50%;
+  z-index: var(--z-toast);
+  width: min(560px, calc(100% - 2 * var(--space-4)));
+  transform: translateX(-50%);
+}
+
+.status:empty {
+  display: none;
+}
+
+.status__message {
+  padding: var(--space-3) var(--space-4);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  font-size: var(--text-sm);
+}
+
+.status__message strong {
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.status__detail {
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+
+.status__message .btn {
+  margin-top: var(--space-3);
+}
+
+/* Timeline bar */
+/* Content and sizing live in timeline.css; its real height is measured and written to
+   --timeline-h so the panel can sit right above it. */
+.timeline {
+  grid-row: 3;
+  z-index: var(--z-timeline);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2) var(--space-4) calc(var(--space-1) + env(safe-area-inset-bottom));
+  background: var(--paper-2);
+  border-top: 1px solid var(--rule);
+}
+
+/* Side panel: hidden by default via the [hidden] attribute. Position only; the card's
+   contents and the mobile sheet heights live in panel.css.
+   Mobile: bottom sheet. Desktop: 400px column between top bar and timeline. */
+.panel {
+  position: absolute;
+  z-index: var(--z-panel);
+  left: 0;
+  right: 0;
+  bottom: var(--timeline-h);
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  border-radius: 12px 12px 0 0;
+  box-shadow: var(--shadow);
+  animation: panel-up var(--dur-2) var(--ease);
+}
+
+.panel__close {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+}
+
+.panel__body {
+  padding: var(--space-5) var(--space-4) var(--space-4);
+  overflow-y: auto;
+}
+
+@keyframes panel-up {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+
+@keyframes panel-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .panel {
+    top: var(--topbar-h);
+    right: 0;
+    bottom: var(--timeline-h);
+    left: auto;
+    width: var(--panel-w);
+    max-height: none;
+    border-top: 0;
+    border-left: 1px solid var(--rule);
+    border-radius: 0;
+    animation-name: panel-in;
+  }
+}
+
+/* On phones the About and Theme buttons shrink to a glyph so the search box keeps its room. */
+@media (max-width: 640px) {
+  .btn--compact {
+    min-width: var(--tap-target);
+    padding-inline: 0;
+    font-size: 0;
+  }
+
+  .btn--compact::before {
+    content: attr(data-glyph);
+    font-size: var(--text-md);
+  }
+}
+
+/* Embed mode (src/embed.ts): the map alone, with a link to the full map. */
+[data-embed] {
+  --topbar-h: 0px;
+}
+
+[data-embed] .topbar {
+  display: none;
+}
+
+[data-embed-no-timeline] {
+  --timeline-h: 0px;
+}
+
+[data-embed-no-timeline] .timeline {
+  display: none;
+}
+
+.embed-link {
+  position: absolute;
+  left: var(--space-3);
+  bottom: var(--space-3);
+  z-index: var(--z-map-overlay);
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}

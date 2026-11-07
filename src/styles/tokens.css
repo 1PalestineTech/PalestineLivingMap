@@ -1,0 +1,161 @@
+/* Design tokens from docs/SPEC.md section 5. Marker colors live in src/data/categories.ts. */
+
+:root {
+  /* Palette: light theme (default) */
+  --paper: #f4ecdc;
+  --paper-2: #eadfc8;
+  --ink: #2a211a;
+  --ink-2: #5b4a3b;
+  --rule: #c9b99c;
+  --sea: #c7d6d3;
+  --sea-ink: #4f6f73;
+  --land-low: #c9d2a8;
+  --land-mid: #e3c99a;
+  --land-high: #b88a62;
+  --accent: #a3362b;
+  --glow: #e8a54b;
+
+  /* Translucent surfaces */
+  --paper-glass: rgb(244 236 220 / 0.88);
+  --shadow: 0 2px 12px rgb(42 33 26 / 0.18);
+
+  /* Fonts */
+  --font-display: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
+  --font-ui: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-ar: 'IBM Plex Sans Arabic', 'IBM Plex Sans', system-ui, sans-serif;
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-year: 2.5rem;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Shell dimensions */
+  --topbar-h: 48px;
+  --timeline-h: 130px;
+  --panel-w: 400px;
+  --tap-target: 44px;
+
+  /* Z-index scale */
+  --z-map: 0;
+  --z-map-overlay: 10;
+  --z-timeline: 20;
+  --z-panel: 30;
+  --z-topbar: 40;
+  --z-sheet: 50;
+  --z-toast: 60;
+  --z-skip: 100;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --dur-1: 120ms;
+  --dur-2: 240ms;
+  --dur-3: 300ms;
+  --dur-4: 600ms;
+
+  color-scheme: light;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --topbar-h: 56px;
+    --timeline-h: 150px;
+  }
+}
+
+/* Dark theme (night chart): follows the system unless the user picked a theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #1c1a17;
+    --paper-2: #26231f;
+    --ink: #efe6d6;
+    --ink-2: #b9ac97;
+    --rule: #4a4339;
+    --sea: #1f2c2f;
+    --land-low: #2e3427;
+    --land-mid: #3a3326;
+    --land-high: #4a3a2b;
+    --accent: #e0705f;
+    --glow: #f2b65e;
+    --paper-glass: rgb(28 26 23 / 0.88);
+    --shadow: 0 2px 12px rgb(0 0 0 / 0.5);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #1c1a17;
+  --paper-2: #26231f;
+  --ink: #efe6d6;
+  --ink-2: #b9ac97;
+  --rule: #4a4339;
+  --sea: #1f2c2f;
+  --land-low: #2e3427;
+  --land-mid: #3a3326;
+  --land-high: #4a3a2b;
+  --accent: #e0705f;
+  --glow: #f2b65e;
+  --paper-glass: rgb(28 26 23 / 0.88);
+  --shadow: 0 2px 12px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}
+
+/* Inked look (owner request, 2026-11-04): yellowed parchment, olive and ochre washes, grey-green sea.
+   Set by data-look on <html> (src/map/look.ts); dark variants follow the theme. */
+:root[data-look='inked'] {
+  --paper: #ead9a8;
+  --paper-2: #dfc98f;
+  --ink: #3a2616;
+  --ink-2: #61442a;
+  --rule: #b99c63;
+  --sea: #a7b4a2;
+  --sea-ink: #4c5f50;
+  --land-low: #c8c283;
+  --land-mid: #d8bb78;
+  --land-high: #b58d58;
+  --accent: #8a2f20;
+  --paper-glass: rgb(234 217 168 / 0.9);
+  --shadow: 0 2px 12px rgb(58 38 22 / 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-look='inked']:not([data-theme='light']) {
+    --paper: #2b2216;
+    --paper-2: #342818;
+    --ink: #efdcae;
+    --ink-2: #c8ac7a;
+    --rule: #5a4a32;
+    --sea: #25302b;
+    --sea-ink: #8ea78f;
+    --land-low: #3c3b22;
+    --land-mid: #4a3b22;
+    --land-high: #5b4229;
+    --accent: #e08a6a;
+    --paper-glass: rgb(43 34 22 / 0.9);
+  }
+}
+
+:root[data-look='inked'][data-theme='dark'] {
+  --paper: #2b2216;
+  --paper-2: #342818;
+  --ink: #efdcae;
+  --ink-2: #c8ac7a;
+  --rule: #5a4a32;
+  --sea: #25302b;
+  --sea-ink: #8ea78f;
+  --land-low: #3c3b22;
+  --land-mid: #4a3b22;
+  --land-high: #5b4229;
+  --accent: #e08a6a;
+  --paper-glass: rgb(43 34 22 / 0.9);
+}

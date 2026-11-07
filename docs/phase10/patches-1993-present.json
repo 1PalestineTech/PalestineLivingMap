@@ -1,0 +1,603 @@
+[
+  {
+    "id": "jericho-world-heritage-2023",
+    "field": "dateStart",
+    "old": "2023",
+    "new": "2023-09-17",
+    "reason": "Al Jazeera and AP (read) report the Committee vote on Sunday 17 September 2023 in Riyadh."
+  },
+  {
+    "id": "jericho-world-heritage-2023",
+    "field": "datePrecision",
+    "old": "year",
+    "new": "day",
+    "reason": "Day now sourced."
+  },
+  {
+    "id": "jericho-world-heritage-2023",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Ancient Palestinian site near Jericho added to UNESCO World Heritage list",
+      "url": "https://www.aljazeera.com/news/2023/9/17/prehistoric-palestinian-site-added-to-unesco-world-heritage-list",
+      "publisher": "Al Jazeera, 17 September 2023",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Vote at the World Heritage Committee in Riyadh on 17 Sep 2023; site distinct from the later city; permanent settlement by the 9th-8th millennium BC (quoting UNESCO); Israeli Foreign Ministry condemnation."
+    },
+    "reason": "Date source; whc.unesco.org blocked (403)."
+  },
+  {
+    "id": "jericho-world-heritage-2023",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "UNESCO designates ruins near ancient Jericho as World Heritage Site, drawing Israeli anger",
+      "url": "https://www.nbcnews.com/news/world/unesco-designates-ruins-ancient-jericho-world-heritage-site-israel-rcna105558",
+      "publisher": "Associated Press via NBC News, 18 September 2023",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Vote on Sunday 17 Sep 2023 in Riyadh; Israel left UNESCO in 2019 but remains party to the Convention; Israeli MFA called it a cynical ploy."
+    },
+    "reason": "Second independent date source and Israeli position."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Oslo Accords and the Arab-Israeli Peace Process",
+      "url": "https://history.state.gov/milestones/1993-2000/oslo",
+      "publisher": "U.S. Department of State, Office of the Historian",
+      "accessedDate": "2026-11-03",
+      "note": "Read. DOP signed 13 September 1993 at the White House; Israel accepted the PLO as representative of the Palestinians and the PLO recognised Israel; five-year PA period; permanent-status issues deferred."
+    },
+    "reason": "Replaces Wikipedia for date, venue and recognition."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Text of Mutual Recognition Letters",
+      "url": "https://www.jta.org/archive/text-of-mutual-recognition-letters",
+      "publisher": "Jewish Telegraphic Agency, 10 September 1993",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Texts of the Arafat-Rabin letters of mutual recognition, published before the signing."
+    },
+    "reason": "Supports \"mutual recognition was exchanged beforehand\"."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "The Morning After",
+      "url": "https://www.lrb.co.uk/the-paper/v15/n20/edward-said/the-morning-after",
+      "publisher": "Edward Said, London Review of Books, vol. 15 no. 20, 1993",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Said calls the agreement an instrument of Palestinian surrender, a \"Palestinian Versailles\"."
+    },
+    "reason": "Primary source for the Said perspective."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Why the Oslo Process Doomed Peace",
+      "url": "https://www.meforum.org/6264/why-the-oslo-process-doomed-peace",
+      "publisher": "Efraim Karsh, Middle East Quarterly 23:4, Fall 2016",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Karsh calls the accords the \"starkest strategic blunder\" in Israel's history."
+    },
+    "reason": "Primary source for the Karsh perspective."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "perspectives[0].viewpoint",
+    "old": "Critics of the accords (as summarised by Wikipedia)",
+    "new": "Edward Said, Palestinian-American scholar",
+    "reason": "Perspective attributed to Said directly."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "perspectives[0].claim",
+    "old": "According to critics cited in the article, including Edward Said, the accords rested on an unequal balance of power and left Israeli control over Palestinian life largely intact.",
+    "new": "According to Edward Said, the agreement amounted to a Palestinian surrender, 'a Palestinian Versailles'.",
+    "reason": "Old wording is not Said's argument as written in his LRB article (read)."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "perspectives[0].sourceIndex",
+    "old": 1,
+    "new": 4,
+    "reason": "Points to the added LRB source (index 4 after the two original sources plus Historian and JTA)."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "perspectives[1].viewpoint",
+    "old": "Efraim Karsh (as summarised by Wikipedia)",
+    "new": "Efraim Karsh, Israeli historian",
+    "reason": "Now cited directly."
+  },
+  {
+    "id": "oslo-declaration-of-principles-1993",
+    "field": "perspectives[1].sourceIndex",
+    "old": 1,
+    "new": 5,
+    "reason": "Points to the added Karsh MEQ source."
+  },
+  {
+    "id": "israel-jordan-wadi-araba-treaty-1994",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Treaty of Peace between the State of Israel and the Hashemite Kingdom of Jordan",
+      "url": "https://www.peaceagreements.org/view/594/",
+      "publisher": "PA-X Peace Agreements Database, University of Edinburgh",
+      "accessedDate": "2026-11-03",
+      "note": "Read (full text). Done at the Araba/Arava Crossing point, 26 Oct 1994; signed by Yitzhak Rabin and Abdul Salam Majali, witnessed by Clinton; Art. 3 boundary without prejudice to territories under Israeli military government since 1967; Art. 6 and Annex II water; Art. 9(2) Jordan's present special role in Muslim holy shrines in Jerusalem."
+    },
+    "reason": "Primary text replaces Wikipedia."
+  },
+  {
+    "id": "israel-jordan-wadi-araba-treaty-1994",
+    "field": "summary",
+    "old": "Prime Ministers Yitzhak Rabin and Abdelsalam Majali signed a peace treaty fixing the Israel-Jordan boundary, allocating water, and recognising Jordan's special role over Muslim shrines in Jerusalem. The boundary with the West Bank was set 'without prejudice' to that territory's status.",
+    "new": "Prime Ministers Yitzhak Rabin and Abdul Salam Majali signed a peace treaty fixing the Israel-Jordan boundary, allocating water, and recognising Jordan's special role over Muslim shrines in Jerusalem. The boundary with the West Bank was set 'without prejudice' to that territory's status.",
+    "reason": "Spelling as in the treaty signature block."
+  },
+  {
+    "id": "israel-jordan-wadi-araba-treaty-1994",
+    "field": "location.lat",
+    "old": 29.7,
+    "new": 29.575,
+    "reason": "Wadi Araba Crossing per Wikipedia coordinates; current point about 14 km north."
+  },
+  {
+    "id": "israel-jordan-wadi-araba-treaty-1994",
+    "field": "location.lng",
+    "old": 35,
+    "new": 34.978,
+    "reason": "As above."
+  },
+  {
+    "id": "oslo-ii-interim-agreement-1995",
+    "field": "summary",
+    "old": "Rabin and Arafat signed the Interim Agreement in Washington, extending Palestinian self-rule in the West Bank. It created Areas A, B and C with different mixes of Palestinian and Israeli authority and set a transition of up to five years. Area C, remaining under Israeli control, covers about 60% of the West Bank.",
+    "new": "Rabin and Arafat signed the Interim Agreement in Washington, extending Palestinian self-rule in the West Bank. It created Areas A, B and C with different mixes of Palestinian and Israeli authority, and Area C was to be transferred in phases. Area C remains under Israeli control; OCHA put it at about 62% of the West Bank in 2010.",
+    "reason": "Agreement text (Art. XI) says Area C to be gradually transferred; the 60% figure needed a source and date (OCHA 2010: 62%). 58 words."
+  },
+  {
+    "id": "oslo-ii-interim-agreement-1995",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Israeli-Palestinian Interim Agreement on the West Bank and the Gaza Strip ('Oslo II')",
+      "url": "https://www.peaceagreements.org/view/410/",
+      "publisher": "PA-X Peace Agreements Database, University of Edinburgh",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Washington, D.C., 28 Sep 1995; Art. XI Land (Area C defined as areas outside A and B, to be gradually transferred); permanent-status talks by 4 May 1996; witnessed by the US, Norway, Russia, Japan."
+    },
+    "reason": "Primary text replaces Wikipedia."
+  },
+  {
+    "id": "oslo-ii-interim-agreement-1995",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Area C Humanitarian Response Plan Fact Sheet",
+      "url": "https://www.ochaopt.org/content/area-c-humanitarian-response-plan-fact-sheet",
+      "publisher": "UN OCHA oPt, 3 September 2010",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Area C is 62 per cent of West Bank land; only 1 per cent planned for Palestinian construction."
+    },
+    "reason": "Dated source for the Area C share."
+  },
+  {
+    "id": "oslo-ii-interim-agreement-1995",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Area C of the West Bank: Key Humanitarian Concerns (update August 2014)",
+      "url": "https://www.ochaopt.org/sites/default/files/ocha_opt_area_c_factsheet_August_2014_english.pdf",
+      "publisher": "UN OCHA oPt, August 2014",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Over 60 percent of the West Bank is Area C, where Israel retains near exclusive control; about 300,000 Palestinians and some 341,000 settlers in Area C."
+    },
+    "reason": "Second dated OCHA figure."
+  },
+  {
+    "id": "camp-david-summit-2000",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Camp David: The Tragedy of Errors",
+      "url": "https://www.nybooks.com/articles/2001/08/09/camp-david-the-tragedy-of-errors/",
+      "publisher": "Robert Malley and Hussein Agha, The New York Review of Books, 9 August 2001",
+      "accessedDate": "2026-11-03",
+      "note": "Read in full. Arafat feared a trap; Israeli and US tactical errors; also faults the Palestinians for giving no counterproposal; Haram al-Sharif custodianship ideas."
+    },
+    "reason": "Primary article now readable; replaces the JVL secondary summary (src1)."
+  },
+  {
+    "id": "camp-david-summit-2000",
+    "field": "perspectives[1].claim",
+    "old": "According to Malley and Agha, tactical errors by Israel and the United States contributed to the failure, and Arafat came to see the summit as a trap.",
+    "new": "According to Malley and Agha, Israeli and US tactical errors and Arafat's belief that he faced a trap contributed to the failure, though they also fault the Palestinians for offering no counterproposal.",
+    "reason": "Matches the primary article (read)."
+  },
+  {
+    "id": "camp-david-summit-2000",
+    "field": "perspectives[1].sourceIndex",
+    "old": 1,
+    "new": 2,
+    "reason": "Points to the added NYRB source."
+  },
+  {
+    "id": "icj-advisory-opinion-occupation-2024",
+    "field": "summary",
+    "old": "At the General Assembly's request, the International Court of Justice at The Hague gave an advisory opinion on 19 July 2024. It found Israel's continued presence in the occupied Palestinian territory unlawful and said Israel must end it as rapidly as possible, stop new settlement activity and make reparation. Advisory opinions are not binding.",
+    "new": "On 19 July 2024 the International Court of Justice gave the General Assembly an advisory opinion. By 11 votes to 4 it found Israel's continued presence in the occupied Palestinian territory unlawful, to be ended as rapidly as possible; by 14 to 1, that Israel must stop new settlement, evacuate settlers and make reparation. The opinion is not binding.",
+    "reason": "Votes from the operative paragraph (read on UNISPAL); settlers evacuation added per the Court. 59 words."
+  },
+  {
+    "id": "icj-advisory-opinion-occupation-2024",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "ICJ's Advisory Opinion - Legal Consequences arising from the Policies and Practices of Israel in the Occupied Palestinian Territory, including East Jerusalem",
+      "url": "https://www.un.org/unispal/?p=298846",
+      "publisher": "UNISPAL (UN Division for Palestinian Rights)",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Operative paragraph with votes: jurisdiction unanimous; 14-1 to comply; 11-4 unlawful presence and obligation to end it (against Sebutinde, Tomka, Abraham, Aurescu); 14-1 settlements and reparation; 12-3 non-recognition by States and international organisations."
+    },
+    "reason": "Vote counts."
+  },
+  {
+    "id": "icj-advisory-opinion-occupation-2024",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Israel's continued occupation of Palestinian territory 'unlawful': UN world court",
+      "url": "https://news.un.org/en/story/2024/07/1152296",
+      "publisher": "UN News, 19 July 2024 (read via the UNISPAL copy https://www.un.org/unispal/document/israels-continued-occupation-unlawful-19jul24)",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Conclusions; advisory opinions non-binding; according to media reports Israel's Foreign Ministry called the opinion fundamentally wrong and one-sided and said only direct negotiations can bring a settlement."
+    },
+    "reason": "Non-binding status and Israeli response."
+  },
+  {
+    "id": "west-bank-barrier-and-icj-opinion-2002-2004",
+    "field": "summary",
+    "old": "Israel began building a barrier in June 2002, saying it prevents attacks from the West Bank. About 85% of the route runs inside the West Bank (OCHA, 2016). On 9 July 2004 the International Court of Justice found the wall's West Bank sections contrary to international law; Israel disputed the Court's jurisdiction.",
+    "new": "Israel began building a barrier in June 2002, saying it prevents attacks from the West Bank. About 85% of the route runs inside the West Bank (OCHA, 2016). On 9 July 2004 the International Court of Justice found, by 14 votes to 1, the sections in occupied territory, including East Jerusalem, contrary to international law; Israel disputed the Court's jurisdiction.",
+    "reason": "Court wording and vote (ICJ press release 2004/28, read)."
+  },
+  {
+    "id": "west-bank-barrier-and-icj-opinion-2002-2004",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory: Advisory Opinion (ICJ Press Release 2004/28)",
+      "url": "https://www.un.org/unispal/document/auto-insert-205577/",
+      "publisher": "UNISPAL copy of ICJ Press Release 2004/28, 9 July 2004",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Votes: A (contrary to international law) 14-1; B (cease, dismantle) 14-1; C (reparation) 14-1; D (obligations of States) 13-2; E (UN action) 14-1."
+    },
+    "reason": "Vote counts; ICJ PDFs 403."
+  },
+  {
+    "id": "rabin-assassination-1995",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Rabin assassinated at peace rally",
+      "url": "http://www.cnn.com/WORLD/9511/rabin/index.html",
+      "publisher": "CNN, 4 November 1995",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Shot after a peace rally in Tel Aviv's Kings Square on 4 Nov 1995; died in surgery at Ichilov Hospital; gunman Yigal Amir, a Bar-Ilan law student."
+    },
+    "reason": "Contemporaneous source for the exact date; the JVL page served an empty shell this session."
+  },
+  {
+    "id": "second-intifada-begins-2000",
+    "field": "summary",
+    "old": "Ariel Sharon, then Likud opposition leader, visited the Haram al-Sharif/Temple Mount under heavy police guard. Clashes followed the next day and spread into an uprising lasting until about 2005. Sources differ on its causes; one estimate gives about 3,000 Palestinian and 1,000 Israeli deaths.",
+    "new": "Ariel Sharon, then Likud opposition leader, visited the Haram al-Sharif/Temple Mount under heavy police guard. Clashes followed the next day and grew into an uprising lasting until about 2005. The Mitchell Committee (2001) found the visit 'poorly timed' but not its cause. B'Tselem counted 3,174 Palestinians and 940 Israelis killed to the end of 2004.",
+    "reason": "Unnamed \"one estimate\" replaced by a named, dated figure; causes attributed to the Mitchell report. 55 words."
+  },
+  {
+    "id": "second-intifada-begins-2000",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Sharm el-Sheikh Fact-Finding Committee Report (Mitchell Report)",
+      "url": "https://avalon.law.yale.edu/21st_century/mitchell_plan.asp",
+      "publisher": "Avalon Project, Yale Law School (report dated 30 April 2001)",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Visit on 28 Sep; lethal police force on 29 Sep; GOI and PLO accounts of causes; the visit did not cause the intifada but was poorly timed; no persuasive evidence of a PA plan or that the visit was more than an internal political act."
+    },
+    "reason": "Neutral international primary source for causes."
+  },
+  {
+    "id": "second-intifada-begins-2000",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "2004: Hundreds die at Israel's hand",
+      "url": "https://www.aljazeera.com/news/2005/1/3/2004-hundreds-die-at-israels-hand",
+      "publisher": "Al Jazeera, 3 January 2005 (reporting B'Tselem's annual figures)",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Per B'Tselem: 3,174 Palestinians (617 minors) killed by Israeli forces and settlers and 940 Israelis killed, September 2000 to end 2004. Article wording is not neutral; use only for the attributed figures."
+    },
+    "reason": "Dated, attributed figures; btselem.org returned 429."
+  },
+  {
+    "id": "gaza-disengagement-2005",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Israel's Disengagement from Gaza (CRS Report RS22000)",
+      "url": "https://www.everycrsreport.com/files/20050916_RS22000_4951f98925775ed0fb2dcf0904ce43ba4783fc42.html",
+      "publisher": "Congressional Research Service, 16 September 2005",
+      "accessedDate": "2026-11-03",
+      "note": "Read. About 8,500 settlers in Gaza; implementation began 15 Aug 2005; settler evacuation 17-23 Aug; IDF completed withdrawal 12 Sep and the military government was cancelled; PA position that Israel remains occupying power while it controls access points."
+    },
+    "reason": "Non-Wikipedia source for dates, settler figure and PA position."
+  },
+  {
+    "id": "hamas-gaza-takeover-and-blockade-2007",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Chronological Review of Events, June 2007",
+      "url": "https://www.un.org/unispal/document/auto-insert-209128/",
+      "publisher": "UN Division for Palestinian Rights (UNISPAL)",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Hamas seizes Fatah and Preventive Security headquarters in Gaza (13-14 June); Abbas declares a state of emergency, dissolves the government and appoints Salam Fayyad."
+    },
+    "reason": "UN source replaces Wikipedia for the June 2007 sequence."
+  },
+  {
+    "id": "unga-non-member-observer-state-2012",
+    "field": "summary",
+    "old": "On 29 November 2012 the General Assembly adopted resolution 67/19 in New York by 138 votes to 9, with 41 abstentions. It accorded Palestine non-member observer State status and called for the name 'Palestine' to replace 'PLO' in UN usage. Israel and the United States opposed it.",
+    "new": "On 29 November 2012 the General Assembly adopted resolution 67/19 in New York by 138 votes to 9, with 41 abstentions. It accorded Palestine non-member observer State status, without prejudice to the role of the PLO as representative of the Palestinian people. Israel, the United States and seven other States voted against.",
+    "reason": "The claim that the resolution replaced 'PLO' with 'Palestine' is not supported: the UN press release says the upgrade was without prejudice to the PLO's role. 52 words."
+  },
+  {
+    "id": "unga-non-member-observer-state-2012",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "General Assembly grants Palestine non-member observer State status at UN",
+      "url": "https://news.un.org/en/story/2012/11/427052",
+      "publisher": "UN News, 29 November 2012",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Vote 138-9-41; Abbas statement; Israeli Ambassador Ron Prosor said the resolution was one-sided and peace comes only through direct negotiations."
+    },
+    "reason": "Primary UN source replaces Wikipedia."
+  },
+  {
+    "id": "unga-non-member-observer-state-2012",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "General Assembly votes overwhelmingly to accord Palestine non-member observer State status (GA/11317)",
+      "url": "https://www.un.org/unispal/document/auto-insert-194067/",
+      "publisher": "UNISPAL copy of UN press release GA/11317, 29 November 2012",
+      "accessedDate": "2026-11-03",
+      "note": "Read. The nine against (Canada, Czech Republic, Israel, Marshall Islands, Micronesia, Nauru, Panama, Palau, United States); upgrade without prejudice to the PLO's rights and role."
+    },
+    "reason": "Vote breakdown and PLO clause; press.un.org itself returned a JS challenge."
+  },
+  {
+    "id": "oct-7-attack-and-gaza-war-2023",
+    "field": "summary",
+    "old": "On 7 October 2023 Hamas-led fighters attacked southern Israel; Israel reports about 1,200 killed and 251 taken hostage. Israel's offensive in Gaza followed. Gaza's Ministry of Health reported 41,965 Palestinians killed by 8 October 2024 (OCHA). A ceasefire was announced on 10 October 2025; OCHA reports 1,334 killed since then, to 2 September 2026.",
+    "new": "On 7 October 2023 Hamas-led fighters attacked southern Israel; according to Israeli authorities over 1,200 people were killed, and 251 were taken hostage. Israel's offensive in Gaza followed. Gaza's Ministry of Health reported 74,564 Palestinians killed as of 28 October 2026 (OCHA). A ceasefire was announced on 10 October 2025, but deaths have continued since.",
+    "reason": "Cumulative MoH figure now sourced and as-of dated from OCHA (28 Oct 2026); Israeli figure from OCHA's \"over 1,200\" (Israeli authorities). 55 words. The 251 hostages figure is still only Wikipedia-sourced."
+  },
+  {
+    "id": "oct-7-attack-and-gaza-war-2023",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Reported impact snapshot | Gaza Strip (28 October 2026)",
+      "url": "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-28-october-2026",
+      "publisher": "UN OCHA oPt, 30 October 2026 (PDF: https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_28_October_2026.pdf)",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Cumulative as of 28 Oct 2026: 74,564 Palestinian fatalities and 175,770 injuries (source MoH Gaza), 74,237 identified as of 7 Oct 2026; Israel: over 1,200 fatalities incl. 7 Oct and aftermath (Israeli media citing official sources), 1,162 identified incl. at least 33 children, about 5,400 injured; 474 soldiers killed in Gaza since the ground operation (Israeli military)."
+    },
+    "reason": "Current as-of OCHA figures with separate attributions."
+  },
+  {
+    "id": "oct-7-attack-and-gaza-war-2023",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Gaza: Top independent rights probe alleges Israel committed genocide",
+      "url": "https://news.un.org/en/story/2025/09/1165856",
+      "publisher": "UN News, 16 September 2025",
+      "accessedDate": "2026-11-03",
+      "note": "Read. The Commission of Inquiry found Israel responsible for genocide (four of five acts in the Convention); Israel's ambassador in Geneva, Danny Meron, rejected the report as cherry-picked and false."
+    },
+    "reason": "Replaces the search-summary basis for persp[3]."
+  },
+  {
+    "id": "oct-7-attack-and-gaza-war-2023",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Application of the Convention on the Prevention and Punishment of the Crime of Genocide in the Gaza Strip (South Africa v. Israel)",
+      "url": "https://www.icj-cij.org/case/192",
+      "publisher": "International Court of Justice case page",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Case pending; provisional-measures orders of 26 January, 28 March and 24 May 2024; later procedural orders to 21 May 2026."
+    },
+    "reason": "ICJ case requested in the editorNote."
+  },
+  {
+    "id": "palestinian-legislative-elections-2006",
+    "field": "dateStart",
+    "old": "2006-01",
+    "new": "2006-01-25",
+    "reason": "Polling day stated in the EU EOM preliminary statement (read)."
+  },
+  {
+    "id": "palestinian-legislative-elections-2006",
+    "field": "datePrecision",
+    "old": "month",
+    "new": "day",
+    "reason": "Day now sourced."
+  },
+  {
+    "id": "palestinian-legislative-elections-2006",
+    "field": "summary",
+    "old": "Palestinians voted for the Legislative Council in the West Bank and Gaza Strip in January 2006. The Central Elections Commission announced on 29 January that Hamas's Change and Reform list won 74 seats, Fatah 45 and minor parties 13. The United States said it would review its funding to the Palestinian Authority.",
+    "new": "Palestinians voted for the Legislative Council in the West Bank and Gaza Strip on 25 January 2006; EU observers reported 77% turnout. The Central Elections Commission announced on 29 January that Hamas's Change and Reform list won 74 seats, Fatah 45 and others 13. On 30 January the Quartet said future aid would be reviewed against set conditions.",
+    "reason": "Polling date, turnout and the Quartet statement now sourced. 58 words."
+  },
+  {
+    "id": "palestinian-legislative-elections-2006",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "EU Election Observation Mission, West Bank and Gaza 2006: Statement of Preliminary Conclusions and Findings",
+      "url": "https://www.un.org/unispal/document/auto-insert-194881",
+      "publisher": "UNISPAL copy of the EU EOM statement, Jerusalem, 26 January 2006",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Elections of 25 January; open and fairly contested process; 77 per cent turnout of registered voters; notes pre-campaign violence and occupation restrictions."
+    },
+    "reason": "Primary observer source."
+  },
+  {
+    "id": "palestinian-legislative-elections-2006",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Quartet says aid to Palestinian government will be reviewed in light of key conditions",
+      "url": "https://news.un.org/en/story/2006/01/167612",
+      "publisher": "UN News, 30 January 2006",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Future aid to be reviewed against commitments including non-violence, recognition of Israel and acceptance of previous agreements."
+    },
+    "reason": "Supports the aid-review clause."
+  },
+  {
+    "id": "gaza-war-2008-2009",
+    "field": "summary",
+    "old": "An Israeli military operation in the Gaza Strip began on 27 December 2008 with air strikes; ground forces entered on 3 January. Israel declared a unilateral ceasefire at 02:00 on 18 January 2009 and Palestinian factions announced one the same day. Israel, which called it Operation Cast Lead, said it aimed to stop rocket fire and smuggling.",
+    "new": "An Israeli military operation in the Gaza Strip, called Operation Cast Lead by Israel, began on 27 December 2008 with air strikes; ground forces entered on 3 January. Israel declared a unilateral ceasefire on 18 January 2009. The UN Fact-Finding Mission (2009) gives Palestinian deaths of 1,166 (Israel) to 1,444 (Gaza authorities); 13 Israelis died, four by friendly fire.",
+    "reason": "Adds the sourced range of figures from the UN Fact-Finding Mission (read). 59 words. Israel's stated aims remain in perspectives[0]."
+  },
+  {
+    "id": "gaza-war-2008-2009",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Report of the United Nations Fact-Finding Mission on the Gaza Conflict (A/HRC/12/48)",
+      "url": "https://www2.ohchr.org/english/bodies/hrcouncil/docs/12session/A-HRC-12-48.pdf",
+      "publisher": "UN Human Rights Council, 25 September 2009",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Para 30: NGOs 1,387-1,417 killed, Gaza authorities 1,444, Israel 1,166; para 357 B'Tselem 1,387 (773 did not take part in hostilities); para 359 IDF breakdown 709/295/162; para 31 and 364: 4 Israelis killed in southern Israel (3 civilians) and 9 soldiers in Gaza, 4 by friendly fire."
+    },
+    "reason": "UN primary source and B'Tselem figure as relayed by the UN."
+  },
+  {
+    "id": "gaza-war-2014",
+    "field": "dateStart",
+    "old": "2014-07",
+    "new": "2014-07-07",
+    "reason": "COI report A/HRC/29/52 para 19 (read): IDF commenced Protective Edge on 7 July 2014."
+  },
+  {
+    "id": "gaza-war-2014",
+    "field": "dateEnd",
+    "old": "2014-08",
+    "new": "2014-08-26",
+    "reason": "COI para 19: operation concluded 26 August with an unconditional ceasefire."
+  },
+  {
+    "id": "gaza-war-2014",
+    "field": "datePrecision",
+    "old": "month",
+    "new": "day",
+    "reason": "Both days now sourced."
+  },
+  {
+    "id": "gaza-war-2014",
+    "field": "summary",
+    "old": "A major escalation between Israel and armed groups in Gaza took place from July to August 2014. OCHA's key-figures page uses a reporting window of 7 July to 26 August. Citing the UN Commission of Inquiry, it gives 2,251 Palestinians killed (1,462 civilians) and 6 Israeli civilians and 67 soldiers killed.",
+    "new": "Israel launched Operation Protective Edge in Gaza on 7 July 2014, saying it aimed to stop rocket attacks; a ground operation began on 17 July, and an unconditional ceasefire took effect on 26 August. The UN Commission of Inquiry (2015) reported 2,251 Palestinians killed, including 1,462 civilians, and 6 civilians and 67 soldiers killed on the Israeli side.",
+    "reason": "Dates, name and figures from the COI report (read). 58 words."
+  },
+  {
+    "id": "gaza-war-2014",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Report of the independent commission of inquiry established pursuant to Human Rights Council resolution S-21/1 (A/HRC/29/52)",
+      "url": "https://digitallibrary.un.org/record/800768/files/A_HRC_29_52-EN.pdf",
+      "publisher": "UN Human Rights Council, 24 June 2015",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Para 19: Protective Edge began 7 July; ground operation 17 July; concluded 26 August with an unconditional ceasefire; para 20: 2,251 Palestinians killed incl. 1,462 civilians; para 21: 6 civilians and 67 soldiers killed in Israel; para 27: 4,881 rockets and 1,753 mortars."
+    },
+    "reason": "Primary UN report replaces the earlier-truce UN News item as the date source."
+  },
+  {
+    "id": "great-march-of-return-2018",
+    "field": "dateStart",
+    "old": "2018-03",
+    "new": "2018-03-30",
+    "reason": "Start day stated in the COI report and UN News (both read)."
+  },
+  {
+    "id": "great-march-of-return-2018",
+    "field": "datePrecision",
+    "old": "month",
+    "new": "day",
+    "reason": "Day sourced."
+  },
+  {
+    "id": "great-march-of-return-2018",
+    "field": "summary",
+    "old": "Protests along the Gaza-Israel fence called the Great March of Return began on 30 March 2018. A UN Commission of Inquiry examined events from 30 March to 31 December 2018 and found reasonable grounds that Israeli forces committed serious violations; it said most protesters were non-violent. Israel's government says Hamas organised the protests as cover for attacks.",
+    "new": "Weekly protests along the Gaza-Israel fence, called the Great March of Return, began on 30 March 2018, demanding an end to the blockade and the return of refugees. A UN Commission of Inquiry found that 189 Palestinians were killed at protest sites in 2018, 183 by live ammunition. Israel's security forces said the protests masked attacks by armed groups.",
+    "reason": "Weekly pattern, demands, figures and Israeli position all from the COI report A/HRC/40/74 (read). 59 words."
+  },
+  {
+    "id": "great-march-of-return-2018",
+    "field": "sources+",
+    "old": null,
+    "new": {
+      "title": "Report of the independent international commission of inquiry on the protests in the Occupied Palestinian Territory (A/HRC/40/74)",
+      "url": "https://documents.un.org/doc/undoc/gen/g19/061/43/pdf/g1906143.pdf",
+      "publisher": "UN Human Rights Council, distributed 6 March 2019",
+      "accessedDate": "2026-11-03",
+      "note": "Read. Para 14: weekly demonstrations demanding lifting of the blockade and return of refugees; para 26: Fridays, 30 Mar-31 Dec 2018 and continued thereafter; para 29: Israeli security forces saw a threat linked to armed groups and an attempt to mask \"terror activities\"; table: 189 killed at demonstration sites, 183 by live ammunition, 29 members of armed groups."
+    },
+    "reason": "Primary report; supports the Israeli perspective with attribution."
+  },
+  {
+    "id": "great-march-of-return-2018",
+    "field": "perspectives[0].claim",
+    "old": "According to Israel's Foreign Ministry, the fence \"separates a sovereign state and a terrorist organization\".",
+    "new": "According to Israeli security forces, as recorded by the UN Commission, the demonstrations were closely linked with armed groups and an attempt to mask 'terror activities'.",
+    "reason": "Old quotation came from a search snippet not supported by sourceIndex 0."
+  },
+  {
+    "id": "great-march-of-return-2018",
+    "field": "perspectives[0].viewpoint",
+    "old": "Israeli government",
+    "new": "Israeli security forces (as recorded by the UN Commission of Inquiry)",
+    "reason": "Matches the new source."
+  },
+  {
+    "id": "great-march-of-return-2018",
+    "field": "perspectives[0].sourceIndex",
+    "old": 0,
+    "new": 1,
+    "reason": "Points to the added COI report."
+  }
+]

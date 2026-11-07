@@ -1,0 +1,143 @@
+/* Follow a thread: the picker under the top bar, the "Following" chip over the map, and the
+   marks on the timeline track. */
+
+.topbar__actions {
+  position: relative;
+}
+
+.follow-picker {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  right: 0;
+  z-index: 30;
+  width: min(320px, calc(100vw - 2 * var(--space-3)));
+  max-height: 60vh;
+  overflow: auto;
+  padding: var(--space-3);
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.follow-picker[hidden] {
+  display: none;
+}
+
+.follow-picker__hint {
+  margin: 0 0 var(--space-2);
+  color: var(--ink-2);
+  font-size: var(--text-sm);
+}
+
+.follow-picker__heading {
+  margin: var(--space-3) 0 var(--space-1);
+  color: var(--ink-2);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.follow-picker__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.follow-picker__item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  width: 100%;
+  min-height: var(--tap-target);
+  padding: var(--space-2);
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.follow-picker__item:hover,
+.follow-picker__item:focus-visible {
+  background: var(--paper-2);
+}
+
+.follow-picker__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+.follow-picker__ar {
+  font-family: var(--font-ar);
+}
+
+.follow-picker__meta {
+  margin-inline-start: auto;
+  color: var(--ink-2);
+  font-size: var(--text-xs);
+}
+
+.thread-chip {
+  position: absolute;
+  top: var(--space-3);
+  left: 50%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  max-width: calc(100% - 140px);
+  padding: var(--space-1) var(--space-2);
+  background: var(--paper-glass);
+  color: var(--ink);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  transform: translateX(-50%);
+  font-size: var(--text-sm);
+}
+
+.thread-chip[hidden] {
+  display: none;
+}
+
+.thread-chip__label {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thread-chip__position {
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.thread-chip .btn {
+  padding: 2px var(--space-2);
+  min-height: 32px;
+}
+
+.thread-mark {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  width: 3px;
+  margin-left: -1px;
+  border-radius: 2px;
+  background: var(--accent);
+  pointer-events: none;
+}
+
+@media (max-width: 599px) {
+  .thread-chip {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 12px;
+    max-width: calc(100% - 100px);
+  }
+}

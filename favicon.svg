@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Placeholder favicon: parchment square with an accent-red marker. Replace in Phase 9. -->
-  <rect width="32" height="32" rx="6" fill="#F4ECDC" />
-  <path d="M16 5c-4.4 0-8 3.4-8 7.7C8 18.300 16 27 16 27s8-8.700 8-14.300C24 8.400 20.400 5 16 5z" fill="#A3362B" />
-  <circle cx="16" cy="12.500" r="3" fill="#F4ECDC" />
-</svg>

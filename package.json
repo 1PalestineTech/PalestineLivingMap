@@ -1,0 +1,40 @@
+{
+  "name": "palestine-a-living-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "validate": "tsx scripts/validate-data.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build:terrain": "tsx scripts/build-terrain.ts",
+    "build:sea-mask": "tsx scripts/build-sea-mask.ts",
+    "build:relief-marks": "tsx scripts/build-relief-marks.ts",
+    "build:reference-images": "tsx scripts/make-reference-images.ts",
+    "build:illustrated-base": "tsx scripts/make-illustrated-base.ts",
+    "fetch:basemap-tiles": "tsx scripts/fetch-basemap-tiles.ts",
+    "build:preview": "tsx scripts/make-preview.ts",
+    "build:glyphs": "tsx scripts/build-glyphs.ts",
+    "package:offline": "tsx scripts/package-offline.ts"
+  },
+  "devDependencies": {
+    "@mapbox/tiny-sdf": "^2.3.0",
+    "@napi-rs/canvas": "^1.1.0",
+    "@types/node": "^26.6.6",
+    "@types/pngjs": "^6.0.5",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "opentype.js": "^2.0.0",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "maplibre-gl": "^6.16.0"
+  }
+}

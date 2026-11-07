@@ -1,0 +1,54 @@
+/* Right-to-left layout for the Arabic interface (src/i18n.ts). The map and the timeline keep their left-to-right direction. */
+
+[dir='rtl'] .map-canvas,
+[dir='rtl'] .timeline,
+[dir='rtl'] .maplibregl-map {
+  direction: ltr;
+}
+
+[dir='rtl'] body {
+  font-family: var(--font-ar), var(--font-ui), sans-serif;
+}
+
+@media (min-width: 1024px) {
+  [dir='rtl'] .panel {
+    right: auto;
+    left: 0;
+    border-left: 0;
+    border-right: 1px solid var(--rule);
+  }
+}
+
+[dir='rtl'] .panel__close {
+  right: auto;
+  left: var(--space-2);
+}
+
+[dir='rtl'] .panel__body {
+  padding-right: 0;
+}
+
+[dir='rtl'] .filters {
+  right: auto;
+  left: var(--space-4);
+}
+
+[dir='rtl'] .card__list,
+[dir='rtl'] .place-names {
+  padding-left: 0;
+  padding-right: var(--space-5);
+}
+
+[dir='rtl'] .legend {
+  text-align: right;
+}
+
+/* English texts (event summaries, sources) keep their own direction inside the Arabic page. */
+[dir='rtl'] .panel__body p,
+[dir='rtl'] .panel__body li,
+[dir='rtl'] .story p,
+[dir='rtl'] .story h2,
+[dir='rtl'] .legend p {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
