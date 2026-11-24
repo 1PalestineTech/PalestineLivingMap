@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "myths.schema.json",
+  "title": "1Palestine Map - myths and facts",
+  "description": "Shape of public/data/myths.json. Each entry answers a common claim using only what the linked event cards (and any directly cited sources) establish. Extra checks live in scripts/lib/validate-myths.ts.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "myths"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": { "const": 1 },
+    "myths": { "type": "array", "items": { "$ref": "#/definitions/myth" } }
+  },
+  "definitions": {
+    "nonEmpty": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url", "publisher", "accessedDate"],
+      "properties": {
+        "title": { "$ref": "#/definitions/nonEmpty" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "publisher": { "$ref": "#/definitions/nonEmpty" },
+        "accessedDate": { "type": "string", "format": "date" },
+        "author": { "$ref": "#/definitions/nonEmpty" },
+        "pages": { "$ref": "#/definitions/nonEmpty" },
+        "note": { "$ref": "#/definitions/nonEmpty" }
+      }
+    },
+    "myth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "myth", "answer", "eventIds", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "myth": { "$ref": "#/definitions/nonEmpty" },
+        "answer": { "$ref": "#/definitions/nonEmpty" },
+        "eventIds": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "sources": { "type": "array", "items": { "$ref": "#/definitions/source" } },
+        "status": { "enum": ["verified", "needs-review"] }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "events.schema.json",
-  "title": "Palestine: A Living Map - events file",
+  "title": "1Palestine Map - events file",
   "description": "Shape of public/data/events.json. Mirrors src/data/types.ts. Extra checks (unique ids, date order, era fit, word counts) live in scripts/validate-data.ts.",
   "type": "object",
   "additionalProperties": false,

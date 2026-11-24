@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "paths.schema.json",
-  "title": "Palestine: A Living Map - animated paths",
+  "title": "1Palestine Map - animated paths",
   "description": "Shape of public/data/paths.json. Mirrors src/data/pathTypes.ts. Extra checks (event exists, dates in order, geometry file exists) live in scripts/validate-data.ts.",
   "type": "object",
   "additionalProperties": false,

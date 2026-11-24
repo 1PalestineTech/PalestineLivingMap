@@ -1,0 +1,62 @@
+{
+  "$schema": "./myths.schema.json",
+  "version": 1,
+  "myths": [
+    {
+      "id": "name-roman-invention",
+      "myth": "The name \"Palestine\" was invented by the Romans in 135 CE.",
+      "answer": "The name is over a thousand years older than Hadrian. Egyptian texts name the Peleset in the 1100s BCE, an Assyrian inscription of about 800 BCE records \"Palashtu\", and Herodotus wrote of \"Palaistine\" around 450 BCE, all before Roman rule existed. The linked cards cite Nur Masalha's history for each attestation.",
+      "eventIds": ["merneptah-stele-canaan-gaza-1205-bce", "adad-nirari-iii-campaign-palashtu-800-bce", "herodotus-histories-palaistin-450-bce"],
+      "status": "needs-review"
+    },
+    {
+      "id": "land-without-a-people",
+      "myth": "\"A land without a people for a people without a land\" - Palestine was empty.",
+      "answer": "Late-Ottoman Palestine was a lived-in country: the 1878 Ottoman registers counted a population in the hundreds of thousands (see the card for the figures and their source), and by 1911 Jaffa printed Falastin, a newspaper addressing its readers as Palestinians. The 1922 British census card gives the Mandate's own count.",
+      "eventIds": ["ottoman-population-1878", "falastin-newspaper-founded-1911", "white-paper-and-census-1922"],
+      "status": "needs-review"
+    },
+    {
+      "id": "identity-invented-1960s",
+      "myth": "Palestinian identity was invented in the 1960s.",
+      "answer": "A shared Palestinian frame of reference is documented far earlier. Al-Maqdisi, a 10th-century Jerusalemite geographer, wrote of Filastin as his home district; the newspaper Falastin was founded in 1911 and spoke to \"Palestinians\" from its first year; and the 1910 al-Fula dispute shows organized Palestinian politics before the First World War.",
+      "eventIds": ["al-maqdisi-ahsan-al-taqasim-985", "falastin-newspaper-founded-1911", "al-fula-land-sale-dispute-1910"],
+      "status": "needs-review"
+    },
+    {
+      "id": "un-created-israel",
+      "myth": "The United Nations created Israel, and the Palestinians simply rejected their own state.",
+      "answer": "General Assembly resolution 181 of November 1947 was a partition recommendation, not an act of creation; the card links the resolution's text. Israel was declared by the Yishuv's leadership in May 1948 as the Mandate ended. Why the partition was rejected, and what followed, is told on those cards with each side attributed.",
+      "eventIds": ["un-partition-plan-1947", "end-of-mandate-israel-declaration-1948"],
+      "status": "needs-review"
+    },
+    {
+      "id": "left-on-arab-orders",
+      "myth": "Palestinians left in 1948 because Arab leaders told them to leave.",
+      "answer": "The Nakba card sets out the record: the UN describes attacks that forced flight, and the card's scholarship summary states that expulsions, violence and fear of them were the primary causes - the view most historians, including Israel's \"New Historians\", now hold. The Lydda and Ramla card documents an explicit expulsion march in July 1948.",
+      "eventIds": ["nakba-1947-1948", "lydda-ramle-expulsions-1948", "fall-of-haifa-1948"],
+      "status": "needs-review"
+    },
+    {
+      "id": "palestinians-sold-their-land",
+      "myth": "Palestinians sold their land, so nothing was taken.",
+      "answer": "Sales before 1948 were real but limited, and fiercely contested by Palestinians themselves - the 1910 al-Fula dispute became a national cause. What moved most land was the war: after 1948, Israel's Absentees' Property Law transferred the property of those expelled or fled to a state custodian. The law's own text is linked on its card.",
+      "eventIds": ["al-fula-land-sale-dispute-1910", "absentees-property-law-1950", "nakba-1947-1948"],
+      "status": "needs-review"
+    },
+    {
+      "id": "ancient-religious-war",
+      "myth": "It is an ancient religious war that has gone on for thousands of years.",
+      "answer": "The political conflict is modern: it grew from late-Ottoman and Mandate-era politics, as the cards of those eras show. The deeper record holds long stretches of shared life - since 1193 a Muslim family has kept the keys of the Church of the Holy Sepulchre, a trust that continues today (see the card's source).",
+      "eventIds": ["holy-sepulchre-keys-nuseibeh-judeh-1193", "falastin-newspaper-founded-1911", "nakba-1947-1948"],
+      "status": "needs-review"
+    },
+    {
+      "id": "nakba-small-or-voluntary",
+      "myth": "The 1948 displacement was small, and the villages were simply abandoned.",
+      "answer": "This map alone carries 464 named villages and towns with a sourced depopulation year - watch the counter climb as the timeline crosses 1947-1949, and open any of their cards for what the village was and what remains. The UN puts the displaced at more than half the Palestinian population; the Nakba card carries the figures and their sources.",
+      "eventIds": ["nakba-1947-1948", "lydda-ramle-expulsions-1948"],
+      "status": "needs-review"
+    }
+  ]
+}

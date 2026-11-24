@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "layers.schema.json",
-  "title": "Palestine: A Living Map - map layers manifest",
+  "title": "1Palestine Map - map layers manifest",
   "description": "Shape of public/data/layers/layers.json. Mirrors src/data/layerTypes.ts. Extra checks (files exist and are GeoJSON, validFrom not after validTo, sources for real layers) live in scripts/validate-data.ts.",
   "type": "object",
   "additionalProperties": false,
